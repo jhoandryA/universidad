@@ -1,47 +1,68 @@
-Sistema de Gestión Académica Universitaria
-Este proyecto es un Sistema de Gestión Académica que optimiza la administración de información universitaria. Permite gestionar carreras, profesores, alumnos, 
-cursos y matrículas a través de una API REST robusta. El sistema facilita el registro de estudiantes, la asignación de cursos a docentes, el control de matrículas y el seguimiento académico con notas y estados. 
-Además, implementa autenticación segura mediante tokens JWT y control de auditoría para todas las operaciones.
- 
-👥 Integrantes
+# 🎓 Sistema de Gestión Académica Universitaria
 
-Apaza Sandagorda, Jhoandry Albino
-Castro Rojas, Jorge Luis
-Vergara Tejada, Angela Paola
-Campos Arias, Camila Nicole
-Castillo Quispe, Abram Alberto
-Huatuco Bravo, Axel Yull
+Este proyecto es un **Sistema de Gestión Académica** diseñado para optimizar y centralizar la administración de información universitaria.  
+Permite gestionar **carreras, profesores, alumnos, cursos y matrículas** mediante una **API REST robusta y segura**.
 
-🎯 Alcance del Proyecto
+El sistema facilita el registro de estudiantes, la asignación de cursos a docentes, el control de matrículas y el seguimiento académico a través de **notas y estados**.  
+Además, implementa **autenticación segura con JWT** y **auditoría completa** para todas las operaciones realizadas.
 
-El sistema de gestión académica busca automatizar y centralizar la administración universitaria, permitiendo:
+---
 
-Gestión completa de carreras.
-Registro y administración de profesores y alumnos.
-Creación y asignación de cursos a carreras y docentes.
-Matrícula de estudiantes en cursos específicos.
-Registro de notas finales y estados académicos.
-Autenticación y control de acceso basado en roles.
-Auditoría completa de todas las operaciones.
-Consultas académicas y reportes del sistema.
+## 👥 Integrantes
 
-Con este sistema, se facilita la labor del área académica y administrativa de la universidad, reduciendo tiempos de gestión y mejorando la organización de los procesos educativos.
+- Apaza Sandagorda, Jhoandry Albino  
+- Castro Rojas, Jorge Luis  
+- Vergara Tejada, Angela Paola  
+- Campos Arias, Camila Nicole  
+- Castillo Quispe, Abram Alberto  
+- Huatuco Bravo, Axel Yull  
 
-🗄️ Diseño de Base de Datos:
-[DiagramaBaseDeDatos.pdf](https://github.com/user-attachments/files/24425483/DiagramaBaseDeDatos.pdf)
-La base de datos está normalizada y utiliza claves foráneas para garantizar la integridad referencial. Implementa eliminación lógica y campos de auditoría para el control de operaciones.
+---
 
-🛠️ Tecnologías Utilizadas
+## 🎯 Alcance del Proyecto
 
-Node.js + TypeScript: Runtime y lenguaje principal del backend con tipado estático
-Express: Framework web para crear la API REST
-MySQL: Sistema de gestión de base de datos relacional
-MySQL2: Driver de conexión entre Node.js y MySQL
-JWT (jsonwebtoken): Autenticación basada en tokens
-Bcrypt: Encriptación segura de contraseñas
-Zod: Validación de esquemas y datos de entrada
-Morgan: Logger de peticiones HTTP
-Dotenv: Gestión de variables de entorno
+El sistema de gestión académica busca **automatizar y centralizar la administración universitaria**, permitiendo:
+
+- Gestión completa de carreras.
+- Registro y administración de profesores y alumnos.
+- Creación y asignación de cursos a carreras y docentes.
+- Matrícula de estudiantes en cursos específicos.
+- Registro de notas finales y estados académicos.
+- Autenticación y control de acceso basado en roles.
+- Auditoría completa de todas las operaciones.
+- Consultas académicas y generación de reportes del sistema.
+
+Con este sistema se facilita la labor del área académica y administrativa de la universidad, **reduciendo tiempos de gestión** y **mejorando la organización** de los procesos educativos.
+
+---
+
+## 🗄️ Diseño de Base de Datos
+
+📄 **Diagrama:** [DiagramaBaseDeDatos.pdf](https://github.com/user-attachments/files/24425558/DiagramaBaseDeDatos.pdf)
+
+
+La base de datos está **normalizada** y utiliza **claves foráneas** para garantizar la integridad referencial.  
+Además, implementa:
+
+- Eliminación lógica de registros.
+- Campos de auditoría para el control de operaciones.
+- Relaciones claras entre las entidades académicas.
+
+---
+
+## 🛠️ Tecnologías Utilizadas
+
+- **Node.js + TypeScript**: Runtime y lenguaje principal del backend con tipado estático.
+- **Express**: Framework web para la creación de la API REST.
+- **MySQL**: Sistema de gestión de base de datos relacional.
+- **MySQL2**: Driver de conexión entre Node.js y MySQL.
+- **JWT (jsonwebtoken)**: Autenticación basada en tokens.
+- **Bcrypt**: Encriptación segura de contraseñas.
+- **Zod**: Validación de esquemas y datos de entrada.
+- **Morgan**: Logger de peticiones HTTP.
+- **Dotenv**: Gestión de variables de entorno.
+
+---
 
 # 📚 API Universidad - Endpoints Disponibles
 
