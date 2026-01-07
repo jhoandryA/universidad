@@ -10,12 +10,17 @@ import alumnoRoutes from './routes/alumno.route';
 import cursoRoutes from './routes/curso.route';
 import alumnoCursoRoutes from './routes/alumno_curso.route';
 
+import swaggerUi from 'swagger-ui-express';
+import { swaggerSpec } from './config/swagger';
+
 const app = express();
 
 app.use(morgan('dev'));
 app.use(express.json());
 
 const prefix = '/api/v1';
+
+app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerSpec));
 app.use(`${prefix}/auth`, authRoutes);
 app.use(`${prefix}/carreras`, carreraRoutes);
 app.use(`${prefix}/profesores`, profesorRoutes);
